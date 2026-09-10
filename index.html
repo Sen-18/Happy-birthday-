@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+  <meta name="theme-color" content="#111111">
+  <meta name="description" content="A funny and lovely birthday surprise for Adah.">
+  <title>Happy Birthday, Adah! 🎂</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="grain"></div>
+
+  <main class="app">
+    <section class="screen active" id="screen1">
+      <div class="sticker">⚠️ IMPORTANT</div>
+      <p class="tiny">A very serious birthday announcement...</p>
+      <h1>Someone is<br><span>getting older.</span> 😭</h1>
+      <p class="subtitle">And unfortunately, we have photographic evidence.</p>
+      <button class="primary" onclick="goTo('screen2')">Open the evidence →</button>
+      <div class="mini-note">swipe? nah. just tap 👆</div>
+    </section>
+
+    <section class="screen" id="screen2">
+      <div class="topline"><span>📸 THE EVIDENCE</span><span>01 / 03</span></div>
+      <div class="polaroid rotate-left">
+        <img src="assets/adah-corn.jpg" alt="Adah eating corn">
+        <div class="caption">caught in 4K 🌽</div>
+      </div>
+      <p class="joke">No context. No explanation.<br><b>Just vibes.</b></p>
+      <button class="primary" onclick="goTo('screen3')">There is more... 😭</button>
+    </section>
+
+    <section class="screen" id="screen3">
+      <div class="topline"><span>📸 MORE EVIDENCE</span><span>02 / 03</span></div>
+      <div class="photo-grid">
+        <div class="polaroid rotate-right">
+          <img src="assets/adah-selfie.jpg" alt="Adah making a funny face">
+          <div class="caption">professional silly person</div>
+        </div>
+        <div class="polaroid rotate-left small-card">
+          <img src="assets/adah-class.jpg" alt="Adah in class">
+          <div class="caption">innocent... allegedly</div>
+        </div>
+      </div>
+      <div class="speech">“I can explain.”<br><small>— Adah, probably</small></div>
+      <button class="primary" onclick="goTo('screen4')">Okay okay, birthday message →</button>
+    </section>
+
+    <section class="screen" id="screen4">
+      <div class="topline"><span>💗 ACTUALLY SERIOUS NOW</span><span>03 / 03</span></div>
+      <div class="message-card">
+        <div class="heart">♡</div>
+        <h2>Happy Birthday,<br><span>Adah!</span> 🎂</h2>
+        <p>
+          Thank you for the laughs, the random moments, the chaos,
+          and all the little memories that make ordinary days better.
+        </p>
+        <p>
+          Stay happy, stay healthy, and keep being your wonderfully
+          silly self. You deserve a really good year ahead. 💗
+        </p>
+        <div class="signature">— from someone who has WAY too many photos of you 😭</div>
+      </div>
+      <button class="primary" onclick="goTo('screen5')">One last thing... 👀</button>
+    </section>
+
+    <section class="screen final" id="screen5">
+      <div class="confetti" id="confetti"></div>
+      <div class="final-badge">🎀 OFFICIAL BIRTHDAY GIRL 🎀</div>
+      <h2>HAPPY<br><span>BIRTHDAY</span><br><b>ADAH!</b> 🎉</h2>
+
+      <div class="final-photos">
+        <img class="p1" src="assets/adah-closeup.jpg" alt="Adah smiling">
+        <img class="p2" src="assets/adah-friends.jpg" alt="Adah with friends">
+      </div>
+
+      <div class="checklist">
+        <div>☑ still funny</div>
+        <div>☑ still chaotic</div>
+        <div>☑ still adorable</div>
+        <div>☑ another year survived 😭</div>
+      </div>
+
+      <p class="wish">Now go enjoy your birthday. 🎂<br>And please stop giving us evidence.</p>
+
+      <button class="secondary" onclick="goTo('screen1')">↻ Replay the chaos</button>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
